@@ -1,197 +1,1123 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/vibe-dat-creativity-app/_next/static/media/e4af272ccee01ff0-s.p.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="stylesheet" href="/vibe-dat-creativity-app/_next/static/css/aa2da78bacbb3b08.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/vibe-dat-creativity-app/_next/static/chunks/webpack-27347baf14845fa9.js"/><script src="/vibe-dat-creativity-app/_next/static/chunks/fd9d1056-51face16839d2cb0.js" async=""></script><script src="/vibe-dat-creativity-app/_next/static/chunks/23-1eecc5ffb287b877.js" async=""></script><script src="/vibe-dat-creativity-app/_next/static/chunks/main-app-dda775df53745ffe.js" async=""></script><script src="/vibe-dat-creativity-app/_next/static/chunks/506-2356288ae97cc930.js" async=""></script><script src="/vibe-dat-creativity-app/_next/static/chunks/app/page-24a4cfd26a3ffdcb.js" async=""></script><title>DAT Creativity Game Progress</title><meta name="description" content="Interactive visualization of my progress in the DAT creativity game using hillclimbing optimization"/><meta name="next-size-adjust"/><script src="/vibe-dat-creativity-app/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js" noModule=""></script></head><body class="__className_3dc3f8"><div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100"><div class="container mx-auto px-4 py-8"><div class="text-center mb-12"><h1 class="text-4xl font-bold text-gray-900 mb-4">DAT Creativity Game Progress</h1><p class="text-xl text-gray-600 max-w-2xl mx-auto">An interactive visualization of my journey through the Divergent Association Task (DAT) creativity game, showcasing the hillclimbing optimization technique.</p></div><div class="space-y-8"><div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="flex flex-col space-y-1.5 p-6"><div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column h-5 w-5" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg>Performance Statistics</div></div><div class="p-6 pt-0"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6"><div class="p-4 bg-gradient-to-br from-green-50 to-green-100 rounded-lg border border-green-200"><div class="flex items-center justify-between mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy h-6 w-6 text-green-600" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-green-500 text-white">Top 0.02%</div></div><div class="text-2xl font-bold text-green-700">95.08</div><div class="text-sm text-green-600">Final Creativity Score</div></div><div class="p-4 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg border border-blue-200"><div class="flex items-center justify-between mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-6 w-6 text-blue-600" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-blue-300 text-blue-700">Percentile</div></div><div class="text-2xl font-bold text-blue-700">99.98<!-- -->%</div><div class="text-sm text-blue-600">Better than others</div></div><div class="p-4 bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg border border-purple-200"><div class="flex items-center justify-between mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-6 w-6 text-purple-600" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-purple-300 text-purple-700">Duration</div></div><div class="text-2xl font-bold text-purple-700">106<!-- -->m</div><div class="text-sm text-purple-600">Total game time</div></div><div class="p-4 bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg border border-orange-200"><div class="flex items-center justify-between mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up h-6 w-6 text-orange-600" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-orange-300 text-orange-700">Optimization</div></div><div class="text-2xl font-bold text-orange-700">13</div><div class="text-sm text-orange-600">Optimization rounds</div></div><div class="p-4 bg-gradient-to-br from-pink-50 to-pink-100 rounded-lg border border-pink-200"><div class="flex items-center justify-between mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap h-6 w-6 text-pink-600" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-pink-300 text-pink-700">Changes</div></div><div class="text-2xl font-bold text-pink-700">45</div><div class="text-sm text-pink-600">Total word swaps</div></div><div class="p-4 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-lg border border-indigo-200"><div class="flex items-center justify-between mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column h-6 w-6 text-indigo-600" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-indigo-300 text-indigo-700">Vocabulary</div></div><div class="text-2xl font-bold text-indigo-700">30</div><div class="text-sm text-indigo-600">Unique words used</div></div></div><div class="space-y-4"><h3 class="text-lg font-semibold text-gray-900">Semantic Distance Analysis</h3><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><div class="p-3 bg-gray-50 rounded-lg"><div class="text-sm font-medium text-gray-600 mb-1">Average Distance</div><div class="text-xl font-bold text-gray-900">95.1</div><div class="text-xs text-gray-500">Across all word pairs</div></div><div class="p-3 bg-gray-50 rounded-lg"><div class="text-sm font-medium text-gray-600 mb-1">Maximum Distance</div><div class="text-xl font-bold text-gray-900">104</div><div class="text-xs text-gray-500">Most distant pair</div></div><div class="p-3 bg-gray-50 rounded-lg"><div class="text-sm font-medium text-gray-600 mb-1">Minimum Distance</div><div class="text-xl font-bold text-gray-900">79</div><div class="text-xs text-gray-500">Closest pair (non-zero)</div></div></div><div class="p-4 bg-blue-50 rounded-lg"><h4 class="font-medium text-blue-900 mb-2">Key Insights</h4><ul class="space-y-1 text-sm text-blue-800"><li>• Achieved exceptional creativity score through systematic optimization</li><li>• Hillclimbing algorithm effectively explored the semantic space</li><li>• <!-- -->3.46<!-- --> average word changes per round shows focused refinement</li><li>• High semantic distances indicate successful divergent thinking</li></ul></div></div></div></div><div class="rounded-lg border bg-card text-card-foreground shadow-sm w-full"><div class="flex flex-col space-y-1.5 p-6"><div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-5 w-5" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>Game Progress Timeline</div></div><div class="p-6 pt-0"><div class="space-y-4"><div class="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"><div class="flex-shrink-0"><div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium bg-gray-200 text-gray-600">1</div></div><div class="flex-grow"><div class="flex items-center justify-between mb-2"><h3 class="font-medium text-gray-900">Round <!-- -->1</h3><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">11:53 PM</div></div><div class="flex flex-wrap gap-1 mb-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">brilliance</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">sports</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">peace</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">rocket</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">icecream</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">+<!-- -->5<!-- --> more</div></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Ropafja:" data-state="closed">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 h-3 w-3" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div><div class="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"><div class="flex-shrink-0"><div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium bg-blue-500 text-white">2</div></div><div class="flex-grow"><div class="flex items-center justify-between mb-2"><h3 class="font-medium text-gray-900">Round <!-- -->2<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap inline-block ml-1 h-4 w-4 text-yellow-500" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></h3><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">12:00 AM</div></div><div class="flex flex-wrap gap-1 mb-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">stochastic</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">fuselage</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">pitfall</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">screwdriver</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">sand</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">+<!-- -->5<!-- --> more</div></div><div class="flex items-center gap-2 text-sm"><span class="text-green-600">+<!-- -->10<!-- --> added</span><span class="text-red-600">-<!-- -->10<!-- --> removed</span></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rp9afja:" data-state="closed">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 h-3 w-3" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div><div class="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"><div class="flex-shrink-0"><div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium bg-gray-200 text-gray-600">3</div></div><div class="flex-grow"><div class="flex items-center justify-between mb-2"><h3 class="font-medium text-gray-900">Round <!-- -->3</h3><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">12:00 AM</div></div><div class="flex flex-wrap gap-1 mb-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">stochastic</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">fuselage</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">pitfall</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">screwdriver</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">sand</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">+<!-- -->5<!-- --> more</div></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rppafja:" data-state="closed">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 h-3 w-3" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div><div class="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"><div class="flex-shrink-0"><div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium bg-blue-500 text-white">4</div></div><div class="flex-grow"><div class="flex items-center justify-between mb-2"><h3 class="font-medium text-gray-900">Round <!-- -->4<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap inline-block ml-1 h-4 w-4 text-yellow-500" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></h3><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">01:33 AM</div></div><div class="flex flex-wrap gap-1 mb-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">stochastic</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">fuselage</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">throne</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">icecream</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">cricket</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">+<!-- -->5<!-- --> more</div></div><div class="flex items-center gap-2 text-sm"><span class="text-green-600">+<!-- -->6<!-- --> added</span><span class="text-red-600">-<!-- -->6<!-- --> removed</span></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rq9afja:" data-state="closed">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 h-3 w-3" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div><div class="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"><div class="flex-shrink-0"><div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium bg-gray-200 text-gray-600">5</div></div><div class="flex-grow"><div class="flex items-center justify-between mb-2"><h3 class="font-medium text-gray-900">Round <!-- -->5</h3><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">01:33 AM</div></div><div class="flex flex-wrap gap-1 mb-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">stochastic</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">fuselage</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">throne</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">icecream</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">cricket</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">+<!-- -->5<!-- --> more</div></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rqpafja:" data-state="closed">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 h-3 w-3" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div><div class="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"><div class="flex-shrink-0"><div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium bg-gray-200 text-gray-600">6</div></div><div class="flex-grow"><div class="flex items-center justify-between mb-2"><h3 class="font-medium text-gray-900">Round <!-- -->6</h3><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">01:34 AM</div></div><div class="flex flex-wrap gap-1 mb-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">stochastic</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">fuselage</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">throne</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">icecream</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">cricket</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">+<!-- -->5<!-- --> more</div></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rr9afja:" data-state="closed">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 h-3 w-3" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div><div class="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"><div class="flex-shrink-0"><div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium bg-gray-200 text-gray-600">7</div></div><div class="flex-grow"><div class="flex items-center justify-between mb-2"><h3 class="font-medium text-gray-900">Round <!-- -->7</h3><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">01:35 AM</div></div><div class="flex flex-wrap gap-1 mb-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">stochastic</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">fuselage</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">throne</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">icecream</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">cricket</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">+<!-- -->5<!-- --> more</div></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rrpafja:" data-state="closed">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 h-3 w-3" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div><div class="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"><div class="flex-shrink-0"><div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium bg-blue-500 text-white">8</div></div><div class="flex-grow"><div class="flex items-center justify-between mb-2"><h3 class="font-medium text-gray-900">Round <!-- -->8<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap inline-block ml-1 h-4 w-4 text-yellow-500" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></h3><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">01:36 AM</div></div><div class="flex flex-wrap gap-1 mb-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">stochastic</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">fuselage</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">throne</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">icecream</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">cricket</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">+<!-- -->5<!-- --> more</div></div><div class="flex items-center gap-2 text-sm"><span class="text-green-600">+<!-- -->2<!-- --> added</span><span class="text-red-600">-<!-- -->2<!-- --> removed</span></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rs9afja:" data-state="closed">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 h-3 w-3" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div><div class="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"><div class="flex-shrink-0"><div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium bg-gray-200 text-gray-600">9</div></div><div class="flex-grow"><div class="flex items-center justify-between mb-2"><h3 class="font-medium text-gray-900">Round <!-- -->9</h3><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">01:36 AM</div></div><div class="flex flex-wrap gap-1 mb-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">stochastic</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">fuselage</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">throne</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">icecream</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">cricket</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">+<!-- -->5<!-- --> more</div></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rspafja:" data-state="closed">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 h-3 w-3" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div><div class="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"><div class="flex-shrink-0"><div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium bg-blue-500 text-white">10</div></div><div class="flex-grow"><div class="flex items-center justify-between mb-2"><h3 class="font-medium text-gray-900">Round <!-- -->10<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap inline-block ml-1 h-4 w-4 text-yellow-500" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></h3><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">01:38 AM</div></div><div class="flex flex-wrap gap-1 mb-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">stochastic</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">fuselage</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">throne</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">icecream</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">foosball</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">+<!-- -->5<!-- --> more</div></div><div class="flex items-center gap-2 text-sm"><span class="text-green-600">+<!-- -->3<!-- --> added</span><span class="text-red-600">-<!-- -->3<!-- --> removed</span></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rt9afja:" data-state="closed">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 h-3 w-3" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div><div class="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"><div class="flex-shrink-0"><div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium bg-gray-200 text-gray-600">11</div></div><div class="flex-grow"><div class="flex items-center justify-between mb-2"><h3 class="font-medium text-gray-900">Round <!-- -->11</h3><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">01:38 AM</div></div><div class="flex flex-wrap gap-1 mb-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">stochastic</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">fuselage</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">throne</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">icecream</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">foosball</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">+<!-- -->5<!-- --> more</div></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rtpafja:" data-state="closed">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 h-3 w-3" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div><div class="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"><div class="flex-shrink-0"><div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium bg-gray-200 text-gray-600">12</div></div><div class="flex-grow"><div class="flex items-center justify-between mb-2"><h3 class="font-medium text-gray-900">Round <!-- -->12</h3><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">01:39 AM</div></div><div class="flex flex-wrap gap-1 mb-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">stochastic</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">fuselage</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">throne</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">icecream</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">foosball</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">+<!-- -->5<!-- --> more</div></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Ru9afja:" data-state="closed">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 h-3 w-3" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div><div class="flex items-center gap-4 p-4 border rounded-lg hover:bg-gray-50 transition-colors"><div class="flex-shrink-0"><div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium bg-blue-500 text-white">13</div></div><div class="flex-grow"><div class="flex items-center justify-between mb-2"><h3 class="font-medium text-gray-900">Round <!-- -->13<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap inline-block ml-1 h-4 w-4 text-yellow-500" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></h3><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">01:39 AM</div></div><div class="flex flex-wrap gap-1 mb-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">stochastic</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">fuselage</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">throne</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">corporate</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs">arthritis</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">+<!-- -->2<!-- --> more</div></div><div class="flex items-center gap-2 text-sm"><span class="text-red-600">-<!-- -->3<!-- --> removed</span></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rupafja:" data-state="closed">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 h-3 w-3" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div></div></div></div><div class="rounded-lg border bg-card text-card-foreground shadow-sm w-full"><div class="flex flex-col space-y-1.5 p-6"><div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up h-5 w-5" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>Word Evolution &amp; Optimization</div></div><div class="p-6 pt-0"><div class="space-y-6"><div class="text-sm text-gray-600 mb-4">Track how words were systematically replaced to maximize semantic distance using hillclimbing optimization.</div><div class="border-l-2 border-blue-200 pl-4"><div class="flex items-center gap-2 mb-3"><div class="bg-blue-500 text-white text-xs font-medium px-2 py-1 rounded">Round <!-- -->2</div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-gray-400" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="text-sm text-gray-600">Optimization step</span></div><div class="space-y-3"><div><div class="flex items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus h-4 w-4 text-red-500" aria-hidden="true"><path d="M5 12h14"></path></svg><span class="text-sm font-medium text-red-600">Removed</span><span class="text-xs text-gray-500">(Lower semantic distance)</span></div><div class="flex flex-wrap gap-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">brilliance</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">sports</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">peace</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">rocket</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">icecream</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">blush</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">friends</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">rhythm</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">velvet</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">ocean</div></div></div><div><div class="flex items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus h-4 w-4 text-green-500" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg><span class="text-sm font-medium text-green-600">Added</span><span class="text-xs text-gray-500">(Higher semantic distance)</span></div><div class="flex flex-wrap gap-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">stochastic</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">fuselage</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">pitfall</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">screwdriver</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">sand</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">spices</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">arthritis</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">printer</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">flute</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">dinosaurs</div></div></div><div class="text-xs text-gray-500 mt-2">This change increased the overall semantic distance between word pairs.</div></div></div><div class="border-l-2 border-blue-200 pl-4"><div class="flex items-center gap-2 mb-3"><div class="bg-blue-500 text-white text-xs font-medium px-2 py-1 rounded">Round <!-- -->4</div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-gray-400" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="text-sm text-gray-600">Optimization step</span></div><div class="space-y-3"><div><div class="flex items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus h-4 w-4 text-red-500" aria-hidden="true"><path d="M5 12h14"></path></svg><span class="text-sm font-medium text-red-600">Removed</span><span class="text-xs text-gray-500">(Lower semantic distance)</span></div><div class="flex flex-wrap gap-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">pitfall</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">screwdriver</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">sand</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">spices</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">flute</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">dinosaurs</div></div></div><div><div class="flex items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus h-4 w-4 text-green-500" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg><span class="text-sm font-medium text-green-600">Added</span><span class="text-xs text-gray-500">(Higher semantic distance)</span></div><div class="flex flex-wrap gap-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">throne</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">icecream</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">cricket</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">remote</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">eel</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">speedbreaker</div></div></div><div class="text-xs text-gray-500 mt-2">This change increased the overall semantic distance between word pairs.</div></div></div><div class="border-l-2 border-blue-200 pl-4"><div class="flex items-center gap-2 mb-3"><div class="bg-blue-500 text-white text-xs font-medium px-2 py-1 rounded">Round <!-- -->8</div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-gray-400" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="text-sm text-gray-600">Optimization step</span></div><div class="space-y-3"><div><div class="flex items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus h-4 w-4 text-red-500" aria-hidden="true"><path d="M5 12h14"></path></svg><span class="text-sm font-medium text-red-600">Removed</span><span class="text-xs text-gray-500">(Lower semantic distance)</span></div><div class="flex flex-wrap gap-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">remote</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">printer</div></div></div><div><div class="flex items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus h-4 w-4 text-green-500" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg><span class="text-sm font-medium text-green-600">Added</span><span class="text-xs text-gray-500">(Higher semantic distance)</span></div><div class="flex flex-wrap gap-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">corporate</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">butter</div></div></div><div class="text-xs text-gray-500 mt-2">This change increased the overall semantic distance between word pairs.</div></div></div><div class="border-l-2 border-blue-200 pl-4"><div class="flex items-center gap-2 mb-3"><div class="bg-blue-500 text-white text-xs font-medium px-2 py-1 rounded">Round <!-- -->10</div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-gray-400" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="text-sm text-gray-600">Optimization step</span></div><div class="space-y-3"><div><div class="flex items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus h-4 w-4 text-red-500" aria-hidden="true"><path d="M5 12h14"></path></svg><span class="text-sm font-medium text-red-600">Removed</span><span class="text-xs text-gray-500">(Lower semantic distance)</span></div><div class="flex flex-wrap gap-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">cricket</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">butter</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">eel</div></div></div><div><div class="flex items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus h-4 w-4 text-green-500" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg><span class="text-sm font-medium text-green-600">Added</span><span class="text-xs text-gray-500">(Higher semantic distance)</span></div><div class="flex flex-wrap gap-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">foosball</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">chilli</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-green-50 text-green-700 border-green-200">lens</div></div></div><div class="text-xs text-gray-500 mt-2">This change increased the overall semantic distance between word pairs.</div></div></div><div class="border-l-2 border-blue-200 pl-4"><div class="flex items-center gap-2 mb-3"><div class="bg-blue-500 text-white text-xs font-medium px-2 py-1 rounded">Round <!-- -->13</div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 text-gray-400" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="text-sm text-gray-600">Optimization step</span></div><div class="space-y-3"><div><div class="flex items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus h-4 w-4 text-red-500" aria-hidden="true"><path d="M5 12h14"></path></svg><span class="text-sm font-medium text-red-600">Removed</span><span class="text-xs text-gray-500">(Lower semantic distance)</span></div><div class="flex flex-wrap gap-2"><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">icecream</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">foosball</div><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-red-50 text-red-700 border-red-200">speedbreaker</div></div></div><div class="text-xs text-gray-500 mt-2">This change increased the overall semantic distance between word pairs.</div></div></div></div><div class="mt-6 p-4 bg-blue-50 rounded-lg"><h4 class="font-medium text-blue-900 mb-2">Hillclimbing Strategy</h4><p class="text-sm text-blue-800">Each word replacement represents a “hill climbing” step where words with lower semantic distances to other words in the set were systematically replaced with words that had higher distances, improving the overall creativity score.</p></div></div></div><div class="rounded-lg border bg-card text-card-foreground shadow-sm w-full"><div class="flex flex-col space-y-1.5 p-6"><div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-grid3x3 lucide-grid-3x3 h-5 w-5" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M3 15h18"></path><path d="M9 3v18"></path><path d="M15 3v18"></path></svg>Semantic Distance Matrix</div></div><div class="p-6 pt-0"><div class="space-y-4"><div class="flex items-center justify-between"><p class="text-sm text-gray-600">Interactive matrix showing semantic distances between final word pairs</p><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target h-4 w-4 text-green-600" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-green-100 text-green-800">Score: <!-- -->95.08</div></div></div><div class="overflow-x-auto"><div class="inline-block min-w-full"><table class="w-full"><thead><tr><th class="p-2"></th><th class="p-2 text-xs font-medium text-gray-600 min-w-[60px]"><div class="transform -rotate-45 origin-bottom-left whitespace-nowrap">stochastic</div></th><th class="p-2 text-xs font-medium text-gray-600 min-w-[60px]"><div class="transform -rotate-45 origin-bottom-left whitespace-nowrap">fuselage</div></th><th class="p-2 text-xs font-medium text-gray-600 min-w-[60px]"><div class="transform -rotate-45 origin-bottom-left whitespace-nowrap">throne</div></th><th class="p-2 text-xs font-medium text-gray-600 min-w-[60px]"><div class="transform -rotate-45 origin-bottom-left whitespace-nowrap">corporate</div></th><th class="p-2 text-xs font-medium text-gray-600 min-w-[60px]"><div class="transform -rotate-45 origin-bottom-left whitespace-nowrap">arthritis</div></th><th class="p-2 text-xs font-medium text-gray-600 min-w-[60px]"><div class="transform -rotate-45 origin-bottom-left whitespace-nowrap">chilli</div></th><th class="p-2 text-xs font-medium text-gray-600 min-w-[60px]"><div class="transform -rotate-45 origin-bottom-left whitespace-nowrap">lens</div></th></tr></thead><tbody><tr><td class="p-2 text-xs font-medium text-gray-600 sticky left-0 bg-white"><div class="max-w-[80px] truncate" title="stochastic">stochastic</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-gray-200 text-gray-500
-                              ">0</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">103</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">100</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">93</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">94</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">98</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">94</div></td></tr><tr><td class="p-2 text-xs font-medium text-gray-600 sticky left-0 bg-white"><div class="max-w-[80px] truncate" title="fuselage">fuselage</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">103</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-gray-200 text-gray-500
-                              ">0</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">94</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">98</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">96</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">91</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-400 text-white hover:bg-green-500
-                              ">79</div></td></tr><tr><td class="p-2 text-xs font-medium text-gray-600 sticky left-0 bg-white"><div class="max-w-[80px] truncate" title="throne">throne</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">100</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">94</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-gray-200 text-gray-500
-                              ">0</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">95</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">98</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">101</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">98</div></td></tr><tr><td class="p-2 text-xs font-medium text-gray-600 sticky left-0 bg-white"><div class="max-w-[80px] truncate" title="corporate">corporate</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">93</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">98</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">95</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-gray-200 text-gray-500
-                              ">0</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">97</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">100</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">92</div></td></tr><tr><td class="p-2 text-xs font-medium text-gray-600 sticky left-0 bg-white"><div class="max-w-[80px] truncate" title="arthritis">arthritis</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">94</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">96</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">98</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">97</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-gray-200 text-gray-500
-                              ">0</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">86</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">87</div></td></tr><tr><td class="p-2 text-xs font-medium text-gray-600 sticky left-0 bg-white"><div class="max-w-[80px] truncate" title="chilli">chilli</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">98</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">91</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">101</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">100</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">86</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-gray-200 text-gray-500
-                              ">0</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">104</div></td></tr><tr><td class="p-2 text-xs font-medium text-gray-600 sticky left-0 bg-white"><div class="max-w-[80px] truncate" title="lens">lens</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">94</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-400 text-white hover:bg-green-500
-                              ">79</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">98</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">92</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">87</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-green-500 text-white hover:bg-green-600
-                              ">104</div></td><td class="p-1"><div class="
-                                w-12 h-12 flex items-center justify-center text-xs font-medium 
-                                rounded cursor-pointer transition-colors duration-200
-                                bg-gray-200 text-gray-500
-                              ">0</div></td></tr></tbody></table></div></div><div class="flex items-center justify-between text-xs text-gray-500"><div class="flex items-center gap-4"><div class="flex items-center gap-1"><div class="w-3 h-3 bg-green-100 rounded"></div><span>Low distance</span></div><div class="flex items-center gap-1"><div class="w-3 h-3 bg-green-300 rounded"></div><span>Medium distance</span></div><div class="flex items-center gap-1"><div class="w-3 h-3 bg-green-500 rounded"></div><span>High distance</span></div></div><span>Matrix is symmetric</span></div><div class="p-4 bg-gray-50 rounded-lg"><h4 class="font-medium text-gray-900 mb-2">Matrix Analysis</h4><div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm"><div><span class="font-medium text-gray-700">Average Distance:</span><div class="text-lg font-semibold text-green-600">95.1</div></div><div><span class="font-medium text-gray-700">Highest Distance:</span><div class="text-lg font-semibold text-blue-600">104</div></div><div><span class="font-medium text-gray-700">Lowest Distance:</span><div class="text-lg font-semibold text-orange-600">79</div></div></div></div></div></div></div><div class="space-y-6"><div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="flex flex-col space-y-1.5 p-6"><div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mountain h-5 w-5" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"></path></svg>Understanding Hillclimbing Optimization</div></div><div class="p-6 pt-0 space-y-6"><div class="text-gray-700"><p class="mb-4"><strong>Hillclimbing</strong> is a local search optimization algorithm that continuously moves towards better solutions by making incremental improvements. Think of it like climbing a hill in foggy weather - you can only see your immediate surroundings, so you always take the step that goes uphill.</p></div><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="space-y-4"><h3 class="text-lg font-semibold text-gray-900 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up h-4 w-4" aria-hidden="true"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg>Algorithm Steps</h3><div class="space-y-3"><div class="flex items-start gap-3 p-3 bg-blue-50 rounded-lg"><div class="rounded-full border text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-blue-500 text-white min-w-[24px] h-6 flex items-center justify-center p-0">1</div><div class="text-sm"><strong>Initialize:</strong> Start with a random solution (10 diverse words)</div></div><div class="flex items-start gap-3 p-3 bg-blue-50 rounded-lg"><div class="rounded-full border text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-blue-500 text-white min-w-[24px] h-6 flex items-center justify-center p-0">2</div><div class="text-sm"><strong>Evaluate:</strong> Calculate semantic distances between all word pairs</div></div><div class="flex items-start gap-3 p-3 bg-blue-50 rounded-lg"><div class="rounded-full border text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-blue-500 text-white min-w-[24px] h-6 flex items-center justify-center p-0">3</div><div class="text-sm"><strong>Find weakness:</strong> Identify the word pair with smallest distance</div></div><div class="flex items-start gap-3 p-3 bg-blue-50 rounded-lg"><div class="rounded-full border text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-blue-500 text-white min-w-[24px] h-6 flex items-center justify-center p-0">4</div><div class="text-sm"><strong>Improve:</strong> Replace one word with a more distant alternative</div></div><div class="flex items-start gap-3 p-3 bg-blue-50 rounded-lg"><div class="rounded-full border text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-blue-500 text-white min-w-[24px] h-6 flex items-center justify-center p-0">5</div><div class="text-sm"><strong>Repeat:</strong> Continue until no improvement is possible</div></div></div></div><div class="space-y-4"><h3 class="text-lg font-semibold text-gray-900 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target h-4 w-4" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>Application to DAT</h3><div class="space-y-3"><div class="p-3 bg-green-50 border-l-4 border-green-400"><h4 class="font-medium text-green-800 mb-1">Objective Function</h4><p class="text-sm text-green-700">Maximize the sum of semantic distances between all word pairs</p></div><div class="p-3 bg-purple-50 border-l-4 border-purple-400"><h4 class="font-medium text-purple-800 mb-1">Neighbor Generation</h4><p class="text-sm text-purple-700">Replace one word at a time with alternatives from vocabulary</p></div><div class="p-3 bg-orange-50 border-l-4 border-orange-400"><h4 class="font-medium text-orange-800 mb-1">Local Optimum</h4><p class="text-sm text-orange-700">Stop when no single word replacement improves the score</p></div></div></div></div></div></div><div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="flex flex-col space-y-1.5 p-6"><div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb h-5 w-5" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>Strategy Insights</div></div><div class="p-6 pt-0"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div><h4 class="font-medium text-gray-900 mb-3">Why Hillclimbing Works Here</h4><ul class="space-y-2 text-sm text-gray-700"><li class="flex items-start gap-2"><div class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></div><span><strong>Greedy improvement:</strong> Each word replacement immediately improves the score</span></li><li class="flex items-start gap-2"><div class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></div><span><strong>Fast convergence:</strong> Reaches a good solution quickly</span></li><li class="flex items-start gap-2"><div class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></div><span><strong>Intuitive process:</strong> Mimics how humans naturally optimize</span></li></ul></div><div><h4 class="font-medium text-gray-900 mb-3">Potential Limitations</h4><ul class="space-y-2 text-sm text-gray-700"><li class="flex items-start gap-2"><div class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></div><span><strong>Local optima:</strong> May get stuck in suboptimal solutions</span></li><li class="flex items-start gap-2"><div class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></div><span><strong>Initial dependency:</strong> Result depends on starting words</span></li><li class="flex items-start gap-2"><div class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></div><span><strong>Single-word changes:</strong> Cannot make coordinated multi-word swaps</span></li></ul></div></div><div class="mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-blue-200"><h4 class="font-semibold text-gray-900 mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-ccw h-4 w-4" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>My Implementation Result</h4><p class="text-sm text-gray-700 mb-2">Despite these theoretical limitations, the hillclimbing approach was highly effective for the DAT creativity game, achieving a score of <strong>95.08</strong> and ranking in the <strong>99.98th percentile</strong>.</p><p class="text-sm text-gray-600">This success suggests that the semantic distance landscape for this problem has favorable properties for local search, with relatively few problematic local optima.</p></div></div></div></div><div class="rounded-lg border bg-card text-card-foreground shadow-sm mb-8"><div class="flex flex-col space-y-1.5 p-6"><div class="text-2xl font-semibold leading-none tracking-tight">What is the DAT Creativity Game?</div><div class="text-sm text-muted-foreground">Understanding the Divergent Association Task</div></div><div class="p-6 pt-0 space-y-4"><p class="text-gray-700">The Divergent Association Task (DAT) is a creativity assessment that measures your ability to think of diverse, unrelated concepts. Players must generate 10 words that are as semantically distant from each other as possible.</p><p class="text-gray-700">The challenge lies in finding words that share minimal conceptual overlap, requiring creative thinking and broad knowledge across different domains.</p></div></div></div></div></div><script src="/vibe-dat-creativity-app/_next/static/chunks/webpack-27347baf14845fa9.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:HL[\"/vibe-dat-creativity-app/_next/static/media/e4af272ccee01ff0-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/vibe-dat-creativity-app/_next/static/css/aa2da78bacbb3b08.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"3:I[5751,[],\"\"]\n5:I[7021,[\"506\",\"static/chunks/506-2356288ae97cc930.js\",\"931\",\"static/chunks/app/page-24a4cfd26a3ffdcb.js\"],\"StatsDashboard\"]\n6:I[2377,[\"506\",\"static/chunks/506-2356288ae97cc930.js\",\"931\",\"static/chunks/app/page-24a4cfd26a3ffdcb.js\"],\"ProgressTimeline\"]\n7:I[8698,[\"506\",\"static/chunks/506-2356288ae97cc930.js\",\"931\",\"static/chunks/app/page-24a4cfd26a3ffdcb.js\"],\"WordEvolutionTracker\"]\n8:I[8577,[\"506\",\"static/chunks/506-2356288ae97cc930.js\",\"931\",\"static/chunks/app/page-24a4cfd26a3ffdcb.js\"],\"ScoreMatrixVisualization\"]\n9:I[4996,[\"506\",\"static/chunks/506-2356288ae97cc930.js\",\"931\",\"static/chunks/app/page-24a4cfd26a3ffdcb.js\"],\"HillclimbingExplanation\"]\na:I[9275,[],\"\"]\nb:I[1343,[],\"\"]\nd:I[6130,[],\"\"]\ne:[]\n"])</script><script>self.__next_f.push([1,"0:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/vibe-dat-creativity-app/_next/static/css/aa2da78bacbb3b08.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"$L3\",null,{\"buildId\":\"Wr6XABKyk8CH7_lsEHInL\",\"assetPrefix\":\"/vibe-dat-creativity-app\",\"initialCanonicalUrl\":\"/\",\"initialTree\":[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"__PAGE__\",{},[[\"$L4\",[\"$\",\"div\",null,{\"className\":\"min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto px-4 py-8\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-center mb-12\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-4xl font-bold text-gray-900 mb-4\",\"children\":\"DAT Creativity Game Progress\"}],[\"$\",\"p\",null,{\"className\":\"text-xl text-gray-600 max-w-2xl mx-auto\",\"children\":\"An interactive visualization of my journey through the Divergent Association Task (DAT) creativity game, showcasing the hillclimbing optimization technique.\"}]]}],[\"$\",\"div\",null,{\"className\":\"space-y-8\",\"children\":[[\"$\",\"$L5\",null,{}],[\"$\",\"$L6\",null,{}],[\"$\",\"$L7\",null,{}],[\"$\",\"$L8\",null,{}],[\"$\",\"$L9\",null,{}],[\"$\",\"div\",null,{\"className\":\"rounded-lg border bg-card text-card-foreground shadow-sm mb-8\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col space-y-1.5 p-6\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-2xl font-semibold leading-none tracking-tight\",\"children\":\"What is the DAT Creativity Game?\"}],[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground\",\"children\":\"Understanding the Divergent Association Task\"}]]}],[\"$\",\"div\",null,{\"className\":\"p-6 pt-0 space-y-4\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-gray-700\",\"children\":\"The Divergent Association Task (DAT) is a creativity assessment that measures your ability to think of diverse, unrelated concepts. Players must generate 10 words that are as semantically distant from each other as possible.\"}],[\"$\",\"p\",null,{\"className\":\"text-gray-700\",\"children\":\"The challenge lies in finding words that share minimal conceptual overlap, requiring creative thinking and broad knowledge across different domains.\"}]]}]]}]]}]]}]}]],null],null]},[[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__className_3dc3f8\",\"children\":[\"$\",\"$La\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lb\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[],\"styles\":null}]}]}],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$Lc\"],\"globalErrorComponent\":\"$d\",\"missingSlots\":\"$We\"}]]\n"])</script><script>self.__next_f.push([1,"c:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"DAT Creativity Game Progress\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"Interactive visualization of my progress in the DAT creativity game using hillclimbing optimization\"}],[\"$\",\"meta\",\"4\",{\"name\":\"next-size-adjust\"}]]\n4:null\n"])</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DAT Creativity Game Progress</title>
+    <meta name="description" content="Interactive visualization of my progress in the DAT creativity game using hillclimbing optimization">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* Tailwind CSS Reset and Base Styles */
+        *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::before,::after{--tw-content:''}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,[type='button'],[type='reset'],[type='submit']{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type='search']{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role="button"]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}
+
+        /* Custom Styles */
+        body {
+            font-family: Inter, sans-serif;
+            background: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
+            min-height: 100vh;
+            color: #111827;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            border: 1px solid #e5e7eb;
+            margin-bottom: 2rem;
+        }
+        
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #111827;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: #6b7280;
+            text-align: center;
+            max-width: 42rem;
+            margin: 0 auto 3rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid;
+        }
+        
+        .stat-card.green {
+            background: linear-gradient(to bottom right, #f0fdf4, #dcfce7);
+            border-color: #bbf7d0;
+        }
+        
+        .stat-card.blue {
+            background: linear-gradient(to bottom right, #eff6ff, #dbeafe);
+            border-color: #bfdbfe;
+        }
+        
+        .stat-card.purple {
+            background: linear-gradient(to bottom right, #faf5ff, #f3e8ff);
+            border-color: #e9d5ff;
+        }
+        
+        .stat-card.orange {
+            background: linear-gradient(to bottom right, #fff7ed, #fed7aa);
+            border-color: #fdba74;
+        }
+        
+        .stat-card.pink {
+            background: linear-gradient(to bottom right, #fdf2f8, #fce7f3);
+            border-color: #fbcfe8;
+        }
+        
+        .stat-card.indigo {
+            background: linear-gradient(to bottom right, #eef2ff, #e0e7ff);
+            border-color: #c7d2fe;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111827;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.125rem 0.625rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .badge.green {
+            background: #10b981;
+            color: white;
+        }
+        
+        .badge.blue {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        .badge.purple {
+            background: #8b5cf6;
+            color: white;
+        }
+        
+        .timeline {
+            space-y: 1rem;
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s;
+        }
+        
+        .timeline-item:hover {
+            background: #f9fafb;
+        }
+        
+        .timeline-number {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        
+        .timeline-number.active {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        .timeline-number.inactive {
+            background: #e5e7eb;
+            color: #6b7280;
+        }
+        
+        .word-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+            margin: 0.5rem 0;
+        }
+        
+        .word-tag {
+            padding: 0.125rem 0.625rem;
+            background: #f3f4f6;
+            border: 1px solid #d1d5db;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .matrix-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        .matrix-table th,
+        .matrix-table td {
+            padding: 0.5rem;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+            font-size: 0.75rem;
+        }
+        
+        .matrix-table th {
+            background: #f9fafb;
+            font-weight: 600;
+        }
+        
+        .matrix-cell {
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.25rem;
+            font-weight: 600;
+            font-size: 0.75rem;
+        }
+        
+        .matrix-cell.high {
+            background: #10b981;
+            color: white;
+        }
+        
+        .matrix-cell.medium {
+            background: #34d399;
+            color: white;
+        }
+        
+        .matrix-cell.low {
+            background: #a7f3d0;
+            color: #065f46;
+        }
+        
+        .matrix-cell.zero {
+            background: #e5e7eb;
+            color: #6b7280;
+        }
+        
+        .info-box {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .info-box.blue {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+        }
+        
+        .info-box.green {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+        }
+        
+        .icon {
+            width: 1.25rem;
+            height: 1.25rem;
+            display: inline-block;
+        }
+        
+        .flex {
+            display: flex;
+        }
+        
+        .items-center {
+            align-items: center;
+        }
+        
+        .gap-2 {
+            gap: 0.5rem;
+        }
+        
+        .gap-4 {
+            gap: 1rem;
+        }
+        
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+        
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+        
+        .text-sm {
+            font-size: 0.875rem;
+        }
+        
+        .text-lg {
+            font-size: 1.125rem;
+        }
+        
+        .font-semibold {
+            font-weight: 600;
+        }
+        
+        .font-medium {
+            font-weight: 500;
+        }
+        
+        .text-gray-600 {
+            color: #6b7280;
+        }
+        
+        .text-gray-700 {
+            color: #374151;
+        }
+        
+        .text-gray-900 {
+            color: #111827;
+        }
+        
+        .text-blue-600 {
+            color: #2563eb;
+        }
+        
+        .text-green-600 {
+            color: #16a34a;
+        }
+        
+        .space-y-4 > * + * {
+            margin-top: 1rem;
+        }
+        
+        .space-y-6 > * + * {
+            margin-top: 1.5rem;
+        }
+        
+        .space-y-8 > * + * {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mb-8">
+            <h1 class="title">DAT Creativity Game Progress</h1>
+            <p class="subtitle">An interactive visualization of my journey through the Divergent Association Task (DAT) creativity game, showcasing the hillclimbing optimization technique.</p>
+        </div>
+
+        <div class="space-y-8">
+            <!-- Performance Statistics -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="section-title">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+                            <path d="M18 17V9"/>
+                            <path d="M13 17V5"/>
+                            <path d="M8 17v-3"/>
+                        </svg>
+                        Performance Statistics
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="stats-grid">
+                        <div class="stat-card green">
+                            <div class="flex items-center justify-between mb-2">
+                                <svg class="icon text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/>
+                                    <path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/>
+                                    <path d="M18 9h1.5a1 1 0 0 0 0-5H18"/>
+                                    <path d="M4 22h16"/>
+                                    <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/>
+                                    <path d="M6 9H4.5a1 1 0 0 1 0-5H6"/>
+                                </svg>
+                                <span class="badge green">Top 0.02%</span>
+                            </div>
+                            <div class="stat-value">95.08</div>
+                            <div class="stat-label">Final Creativity Score</div>
+                        </div>
+
+                        <div class="stat-card blue">
+                            <div class="flex items-center justify-between mb-2">
+                                <svg class="icon text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                    <path d="M16 3.128a4 4 0 0 1 0 7.744"/>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                </svg>
+                                <span class="badge blue">Percentile</span>
+                            </div>
+                            <div class="stat-value">99.98%</div>
+                            <div class="stat-label">Better than others</div>
+                        </div>
+
+                        <div class="stat-card purple">
+                            <div class="flex items-center justify-between mb-2">
+                                <svg class="icon text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 6v6l4 2"/>
+                                    <circle cx="12" cy="12" r="10"/>
+                                </svg>
+                                <span class="badge purple">Duration</span>
+                            </div>
+                            <div class="stat-value">106m</div>
+                            <div class="stat-label">Total game time</div>
+                        </div>
+
+                        <div class="stat-card orange">
+                            <div class="flex items-center justify-between mb-2">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 7h6v6"/>
+                                    <path d="m22 7-8.5 8.5-5-5L2 17"/>
+                                </svg>
+                                <span class="badge" style="background: #f59e0b; color: white;">Optimization</span>
+                            </div>
+                            <div class="stat-value">13</div>
+                            <div class="stat-label">Optimization rounds</div>
+                        </div>
+
+                        <div class="stat-card pink">
+                            <div class="flex items-center justify-between mb-2">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
+                                </svg>
+                                <span class="badge" style="background: #ec4899; color: white;">Changes</span>
+                            </div>
+                            <div class="stat-value">45</div>
+                            <div class="stat-label">Total word swaps</div>
+                        </div>
+
+                        <div class="stat-card indigo">
+                            <div class="flex items-center justify-between mb-2">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+                                    <path d="M18 17V9"/>
+                                    <path d="M13 17V5"/>
+                                    <path d="M8 17v-3"/>
+                                </svg>
+                                <span class="badge" style="background: #6366f1; color: white;">Vocabulary</span>
+                            </div>
+                            <div class="stat-value">30</div>
+                            <div class="stat-label">Unique words used</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Semantic Distance Analysis</h3>
+                        <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr);">
+                            <div class="info-box" style="background: #f9fafb; border: 1px solid #e5e7eb;">
+                                <div class="text-sm font-medium text-gray-600 mb-1">Average Distance</div>
+                                <div class="stat-value text-green-600">95.1</div>
+                                <div class="text-xs text-gray-500">Across all word pairs</div>
+                            </div>
+                            <div class="info-box" style="background: #f9fafb; border: 1px solid #e5e7eb;">
+                                <div class="text-sm font-medium text-gray-600 mb-1">Maximum Distance</div>
+                                <div class="stat-value text-blue-600">104</div>
+                                <div class="text-xs text-gray-500">Most distant pair</div>
+                            </div>
+                            <div class="info-box" style="background: #f9fafb; border: 1px solid #e5e7eb;">
+                                <div class="text-sm font-medium text-gray-600 mb-1">Minimum Distance</div>
+                                <div class="stat-value" style="color: #ea580c;">79</div>
+                                <div class="text-xs text-gray-500">Closest pair (non-zero)</div>
+                            </div>
+                        </div>
+
+                        <div class="info-box blue">
+                            <h4 class="font-medium" style="color: #1e40af; margin-bottom: 0.5rem;">Key Insights</h4>
+                            <ul class="space-y-1 text-sm" style="color: #1e3a8a;">
+                                <li>• Achieved exceptional creativity score through systematic optimization</li>
+                                <li>• Hillclimbing algorithm effectively explored the semantic space</li>
+                                <li>• 3.46 average word changes per round shows focused refinement</li>
+                                <li>• High semantic distances indicate successful divergent thinking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Progress Timeline -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="section-title">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 6v6l4 2"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        Game Progress Timeline
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="space-y-4">
+                        <!-- Round 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-number inactive">1</div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="font-medium text-gray-900">Round 1</h3>
+                                    <span class="badge" style="background: #f3f4f6; color: #374151; border: 1px solid #d1d5db;">11:53 PM</span>
+                                </div>
+                                <div class="word-tags">
+                                    <span class="word-tag">brilliance</span>
+                                    <span class="word-tag">sports</span>
+                                    <span class="word-tag">peace</span>
+                                    <span class="word-tag">rocket</span>
+                                    <span class="word-tag">icecream</span>
+                                    <span class="word-tag">+5 more</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Round 2 - Optimization -->
+                        <div class="timeline-item">
+                            <div class="timeline-number active">2</div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="font-medium text-gray-900">Round 2 
+                                        <svg class="icon" style="color: #eab308; display: inline-block; margin-left: 0.25rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
+                                        </svg>
+                                    </h3>
+                                    <span class="badge" style="background: #f3f4f6; color: #374151; border: 1px solid #d1d5db;">12:00 AM</span>
+                                </div>
+                                <div class="word-tags">
+                                    <span class="word-tag">stochastic</span>
+                                    <span class="word-tag">fuselage</span>
+                                    <span class="word-tag">pitfall</span>
+                                    <span class="word-tag">screwdriver</span>
+                                    <span class="word-tag">sand</span>
+                                    <span class="word-tag">+5 more</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm mt-2">
+                                    <span class="text-green-600">+10 added</span>
+                                    <span class="text-red-600">-10 removed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Round 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-number inactive">3</div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="font-medium text-gray-900">Round 3</h3>
+                                    <span class="badge" style="background: #f3f4f6; color: #374151; border: 1px solid #d1d5db;">12:00 AM</span>
+                                </div>
+                                <div class="word-tags">
+                                    <span class="word-tag">stochastic</span>
+                                    <span class="word-tag">fuselage</span>
+                                    <span class="word-tag">pitfall</span>
+                                    <span class="word-tag">screwdriver</span>
+                                    <span class="word-tag">sand</span>
+                                    <span class="word-tag">+5 more</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Round 4 - Optimization -->
+                        <div class="timeline-item">
+                            <div class="timeline-number active">4</div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="font-medium text-gray-900">Round 4
+                                        <svg class="icon" style="color: #eab308; display: inline-block; margin-left: 0.25rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
+                                        </svg>
+                                    </h3>
+                                    <span class="badge" style="background: #f3f4f6; color: #374151; border: 1px solid #d1d5db;">01:33 AM</span>
+                                </div>
+                                <div class="word-tags">
+                                    <span class="word-tag">stochastic</span>
+                                    <span class="word-tag">fuselage</span>
+                                    <span class="word-tag">throne</span>
+                                    <span class="word-tag">icecream</span>
+                                    <span class="word-tag">cricket</span>
+                                    <span class="word-tag">+5 more</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm mt-2">
+                                    <span class="text-green-600">+6 added</span>
+                                    <span class="text-red-600">-6 removed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Round 8 - Optimization -->
+                        <div class="timeline-item">
+                            <div class="timeline-number active">8</div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="font-medium text-gray-900">Round 8
+                                        <svg class="icon" style="color: #eab308; display: inline-block; margin-left: 0.25rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
+                                        </svg>
+                                    </h3>
+                                    <span class="badge" style="background: #f3f4f6; color: #374151; border: 1px solid #d1d5db;">01:36 AM</span>
+                                </div>
+                                <div class="word-tags">
+                                    <span class="word-tag">stochastic</span>
+                                    <span class="word-tag">fuselage</span>
+                                    <span class="word-tag">throne</span>
+                                    <span class="word-tag">corporate</span>
+                                    <span class="word-tag">arthritis</span>
+                                    <span class="word-tag">+5 more</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm mt-2">
+                                    <span class="text-green-600">+2 added</span>
+                                    <span class="text-red-600">-2 removed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Round 10 - Optimization -->
+                        <div class="timeline-item">
+                            <div class="timeline-number active">10</div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="font-medium text-gray-900">Round 10
+                                        <svg class="icon" style="color: #eab308; display: inline-block; margin-left: 0.25rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
+                                        </svg>
+                                    </h3>
+                                    <span class="badge" style="background: #f3f4f6; color: #374151; border: 1px solid #d1d5db;">01:38 AM</span>
+                                </div>
+                                <div class="word-tags">
+                                    <span class="word-tag">stochastic</span>
+                                    <span class="word-tag">fuselage</span>
+                                    <span class="word-tag">throne</span>
+                                    <span class="word-tag">icecream</span>
+                                    <span class="word-tag">foosball</span>
+                                    <span class="word-tag">+5 more</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm mt-2">
+                                    <span class="text-green-600">+3 added</span>
+                                    <span class="text-red-600">-3 removed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Round 13 - Final Optimization -->
+                        <div class="timeline-item">
+                            <div class="timeline-number active">13</div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="font-medium text-gray-900">Round 13
+                                        <svg class="icon" style="color: #eab308; display: inline-block; margin-left: 0.25rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a .5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
+                                        </svg>
+                                    </h3>
+                                    <span class="badge" style="background: #f3f4f6; color: #374151; border: 1px solid #d1d5db;">01:39 AM</span>
+                                </div>
+                                <div class="word-tags">
+                                    <span class="word-tag">stochastic</span>
+                                    <span class="word-tag">fuselage</span>
+                                    <span class="word-tag">throne</span>
+                                    <span class="word-tag">corporate</span>
+                                    <span class="word-tag">arthritis</span>
+                                    <span class="word-tag">+2 more</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm mt-2">
+                                    <span class="text-red-600">-3 removed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Word Evolution & Optimization -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="section-title">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 7h6v6"/>
+                            <path d="m22 7-8.5 8.5-5-5L2 17"/>
+                        </svg>
+                        Word Evolution &amp; Optimization
+                    </h2>
+                </div>
+                <div class="card-content space-y-6">
+                    <div class="text-sm text-gray-600 mb-4">Track how words were systematically replaced to maximize semantic distance using hillclimbing optimization.</div>
+                    
+                    <!-- Round 2 Evolution -->
+                    <div style="border-left: 2px solid #bfdbfe; padding-left: 1rem;">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="badge blue">Round 2</span>
+                            <svg class="icon text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                            <span class="text-sm text-gray-600">Optimization step</span>
+                        </div>
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <svg class="icon text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14"/>
+                                    </svg>
+                                    <span class="text-sm font-medium text-red-600">Removed</span>
+                                    <span class="text-xs text-gray-500">(Lower semantic distance)</span>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">brilliance</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">sports</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">peace</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">rocket</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">icecream</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">blush</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">friends</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">rhythm</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">velvet</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">ocean</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <svg class="icon text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14"/>
+                                        <path d="M12 5v14"/>
+                                    </svg>
+                                    <span class="text-sm font-medium text-green-600">Added</span>
+                                    <span class="text-xs text-gray-500">(Higher semantic distance)</span>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">stochastic</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">fuselage</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">pitfall</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">screwdriver</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">sand</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">spices</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">arthritis</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">printer</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">flute</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">dinosaurs</span>
+                                </div>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-2">This change increased the overall semantic distance between word pairs.</div>
+                        </div>
+                    </div>
+
+                    <!-- Round 4 Evolution -->
+                    <div style="border-left: 2px solid #bfdbfe; padding-left: 1rem;">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="badge blue">Round 4</span>
+                            <svg class="icon text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                            <span class="text-sm text-gray-600">Optimization step</span>
+                        </div>
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <svg class="icon text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14"/>
+                                    </svg>
+                                    <span class="text-sm font-medium text-red-600">Removed</span>
+                                    <span class="text-xs text-gray-500">(Lower semantic distance)</span>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">pitfall</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">screwdriver</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">sand</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">spices</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">flute</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">dinosaurs</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <svg class="icon text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14"/>
+                                        <path d="M12 5v14"/>
+                                    </svg>
+                                    <span class="text-sm font-medium text-green-600">Added</span>
+                                    <span class="text-xs text-gray-500">(Higher semantic distance)</span>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">throne</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">icecream</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">cricket</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">remote</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">eel</span>
+                                    <span class="badge" style="background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0;">speedbreaker</span>
+                                </div>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-2">This change increased the overall semantic distance between word pairs.</div>
+                        </div>
+                    </div>
+
+                    <!-- Round 13 Final Evolution -->
+                    <div style="border-left: 2px solid #bfdbfe; padding-left: 1rem;">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="badge blue">Round 13</span>
+                            <svg class="icon text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                            <span class="text-sm text-gray-600">Final optimization step</span>
+                        </div>
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <svg class="icon text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14"/>
+                                    </svg>
+                                    <span class="text-sm font-medium text-red-600">Removed</span>
+                                    <span class="text-xs text-gray-500">(Lower semantic distance)</span>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">icecream</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">foosball</span>
+                                    <span class="badge" style="background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca;">speedbreaker</span>
+                                </div>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-2">Final optimization achieved score of 95.08 with 7 highly diverse words.</div>
+                        </div>
+                    </div>
+
+                    <div class="info-box blue">
+                        <h4 class="font-medium" style="color: #1e40af; margin-bottom: 0.5rem;">Hillclimbing Strategy</h4>
+                        <p class="text-sm" style="color: #1e3a8a;">Each word replacement represents a "hill climbing" step where words with lower semantic distances to other words in the set were systematically replaced with words that had higher distances, improving the overall creativity score.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Understanding Hillclimbing Optimization -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="section-title">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
+                        </svg>
+                        Understanding Hillclimbing Optimization
+                    </h2>
+                </div>
+                <div class="card-content space-y-6">
+                    <div class="text-gray-700">
+                        <p class="mb-4"><strong>Hillclimbing</strong> is a local search optimization algorithm that continuously moves towards better solutions by making incremental improvements. Think of it like climbing a hill in foggy weather - you can only see your immediate surroundings, so you always take the step that goes uphill.</p>
+                    </div>
+                    <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                        <div class="space-y-4">
+                            <h3 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m5 12 7-7 7 7"/>
+                                    <path d="M12 19V5"/>
+                                </svg>
+                                Algorithm Steps
+                            </h3>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3 p-3 info-box blue">
+                                    <span class="badge blue" style="min-width: 24px; height: 24px; padding: 0; display: flex; align-items: center; justify-content: center;">1</span>
+                                    <div class="text-sm"><strong>Initialize:</strong> Start with a random solution (10 diverse words)</div>
+                                </div>
+                                <div class="flex items-start gap-3 p-3 info-box blue">
+                                    <span class="badge blue" style="min-width: 24px; height: 24px; padding: 0; display: flex; align-items: center; justify-content: center;">2</span>
+                                    <div class="text-sm"><strong>Evaluate:</strong> Calculate semantic distances between all word pairs</div>
+                                </div>
+                                <div class="flex items-start gap-3 p-3 info-box blue">
+                                    <span class="badge blue" style="min-width: 24px; height: 24px; padding: 0; display: flex; align-items: center; justify-content: center;">3</span>
+                                    <div class="text-sm"><strong>Find weakness:</strong> Identify the word pair with smallest distance</div>
+                                </div>
+                                <div class="flex items-start gap-3 p-3 info-box blue">
+                                    <span class="badge blue" style="min-width: 24px; height: 24px; padding: 0; display: flex; align-items: center; justify-content: center;">4</span>
+                                    <div class="text-sm"><strong>Improve:</strong> Replace one word with a more distant alternative</div>
+                                </div>
+                                <div class="flex items-start gap-3 p-3 info-box blue">
+                                    <span class="badge blue" style="min-width: 24px; height: 24px; padding: 0; display: flex; align-items: center; justify-content: center;">5</span>
+                                    <div class="text-sm"><strong>Repeat:</strong> Continue until no improvement is possible</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <circle cx="12" cy="12" r="6"/>
+                                    <circle cx="12" cy="12" r="2"/>
+                                </svg>
+                                Application to DAT
+                            </h3>
+                            <div class="space-y-3">
+                                <div class="info-box green" style="border-left: 4px solid #4ade80;">
+                                    <h4 class="font-medium text-green-800 mb-1">Objective Function</h4>
+                                    <p class="text-sm text-green-700">Maximize the sum of semantic distances between all word pairs</p>
+                                </div>
+                                <div class="info-box" style="background: #faf5ff; border: 1px solid #e9d5ff; border-left: 4px solid #a855f7;">
+                                    <h4 class="font-medium" style="color: #7c2d12; margin-bottom: 0.25rem;">Neighbor Generation</h4>
+                                    <p class="text-sm" style="color: #7c2d12;">Replace one word at a time with alternatives from vocabulary</p>
+                                </div>
+                                <div class="info-box" style="background: #fff7ed; border: 1px solid #fed7aa; border-left: 4px solid #f97316;">
+                                    <h4 class="font-medium" style="color: #c2410c; margin-bottom: 0.25rem;">Local Optimum</h4>
+                                    <p class="text-sm" style="color: #c2410c;">Stop when no single word replacement improves the score</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                        <div>
+                            <h4 class="font-medium text-gray-900 mb-3">Why Hillclimbing Works Here</h4>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li class="flex items-start gap-2">
+                                    <div style="width: 6px; height: 6px; background: #10b981; border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></div>
+                                    <span><strong>Greedy improvement:</strong> Each word replacement immediately improves the score</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <div style="width: 6px; height: 6px; background: #10b981; border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></div>
+                                    <span><strong>Fast convergence:</strong> Reaches a good solution quickly</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <div style="width: 6px; height: 6px; background: #10b981; border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></div>
+                                    <span><strong>Intuitive process:</strong> Mimics how humans naturally optimize</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-900 mb-3">Potential Limitations</h4>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li class="flex items-start gap-2">
+                                    <div style="width: 6px; height: 6px; background: #ef4444; border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></div>
+                                    <span><strong>Local optima:</strong> May get stuck in suboptimal solutions</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <div style="width: 6px; height: 6px; background: #ef4444; border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></div>
+                                    <span><strong>Initial dependency:</strong> Result depends on starting words</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <div style="width: 6px; height: 6px; background: #ef4444; border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></div>
+                                    <span><strong>Single-word changes:</strong> Cannot make coordinated multi-word swaps</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-box" style="background: linear-gradient(to right, #eff6ff, #faf5ff); border: 1px solid #bfdbfe;">
+                        <h4 class="font-semibold text-gray-900 mb-2 flex items-center gap-2">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                                <path d="M3 3v5h5"/>
+                            </svg>
+                            My Implementation Result
+                        </h4>
+                        <p class="text-sm text-gray-700 mb-2">Despite these theoretical limitations, the hillclimbing approach was highly effective for the DAT creativity game, achieving a score of <strong>95.08</strong> and ranking in the <strong>99.98th percentile</strong>.</p>
+                        <p class="text-sm text-gray-600">This success suggests that the semantic distance landscape for this problem has favorable properties for local search, with relatively few problematic local optima.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semantic Distance Matrix -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="section-title">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect width="18" height="18" x="3" y="3" rx="2"/>
+                            <path d="M3 9h18"/>
+                            <path d="M3 15h18"/>
+                            <path d="M9 3v18"/>
+                            <path d="M15 3v18"/>
+                        </svg>
+                        Semantic Distance Matrix
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div class="flex items-center justify-between mb-4">
+                        <p class="text-sm text-gray-600">Interactive matrix showing semantic distances between final word pairs</p>
+                        <div class="flex items-center gap-2">
+                            <svg class="icon text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="6"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                            <span class="badge green">Score: 95.08</span>
+                        </div>
+                    </div>
+
+                    <div style="overflow-x: auto;">
+                        <table class="matrix-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 100px;"></th>
+                                    <th>stochastic</th>
+                                    <th>fuselage</th>
+                                    <th>throne</th>
+                                    <th>corporate</th>
+                                    <th>arthritis</th>
+                                    <th>chilli</th>
+                                    <th>lens</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>stochastic</th>
+                                    <td><div class="matrix-cell zero">0</div></td>
+                                    <td><div class="matrix-cell high">103</div></td>
+                                    <td><div class="matrix-cell high">100</div></td>
+                                    <td><div class="matrix-cell high">93</div></td>
+                                    <td><div class="matrix-cell high">94</div></td>
+                                    <td><div class="matrix-cell high">98</div></td>
+                                    <td><div class="matrix-cell high">94</div></td>
+                                </tr>
+                                <tr>
+                                    <th>fuselage</th>
+                                    <td><div class="matrix-cell high">103</div></td>
+                                    <td><div class="matrix-cell zero">0</div></td>
+                                    <td><div class="matrix-cell high">94</div></td>
+                                    <td><div class="matrix-cell high">98</div></td>
+                                    <td><div class="matrix-cell high">96</div></td>
+                                    <td><div class="matrix-cell high">91</div></td>
+                                    <td><div class="matrix-cell low">79</div></td>
+                                </tr>
+                                <tr>
+                                    <th>throne</th>
+                                    <td><div class="matrix-cell high">100</div></td>
+                                    <td><div class="matrix-cell high">94</div></td>
+                                    <td><div class="matrix-cell zero">0</div></td>
+                                    <td><div class="matrix-cell high">95</div></td>
+                                    <td><div class="matrix-cell high">98</div></td>
+                                    <td><div class="matrix-cell high">101</div></td>
+                                    <td><div class="matrix-cell high">98</div></td>
+                                </tr>
+                                <tr>
+                                    <th>corporate</th>
+                                    <td><div class="matrix-cell high">93</div></td>
+                                    <td><div class="matrix-cell high">98</div></td>
+                                    <td><div class="matrix-cell high">95</div></td>
+                                    <td><div class="matrix-cell zero">0</div></td>
+                                    <td><div class="matrix-cell high">97</div></td>
+                                    <td><div class="matrix-cell high">100</div></td>
+                                    <td><div class="matrix-cell high">92</div></td>
+                                </tr>
+                                <tr>
+                                    <th>arthritis</th>
+                                    <td><div class="matrix-cell high">94</div></td>
+                                    <td><div class="matrix-cell high">96</div></td>
+                                    <td><div class="matrix-cell high">98</div></td>
+                                    <td><div class="matrix-cell high">97</div></td>
+                                    <td><div class="matrix-cell zero">0</div></td>
+                                    <td><div class="matrix-cell high">86</div></td>
+                                    <td><div class="matrix-cell high">87</div></td>
+                                </tr>
+                                <tr>
+                                    <th>chilli</th>
+                                    <td><div class="matrix-cell high">98</div></td>
+                                    <td><div class="matrix-cell high">91</div></td>
+                                    <td><div class="matrix-cell high">101</div></td>
+                                    <td><div class="matrix-cell high">100</div></td>
+                                    <td><div class="matrix-cell high">86</div></td>
+                                    <td><div class="matrix-cell zero">0</div></td>
+                                    <td><div class="matrix-cell high">104</div></td>
+                                </tr>
+                                <tr>
+                                    <th>lens</th>
+                                    <td><div class="matrix-cell high">94</div></td>
+                                    <td><div class="matrix-cell low">79</div></td>
+                                    <td><div class="matrix-cell high">98</div></td>
+                                    <td><div class="matrix-cell high">92</div></td>
+                                    <td><div class="matrix-cell high">87</div></td>
+                                    <td><div class="matrix-cell high">104</div></td>
+                                    <td><div class="matrix-cell zero">0</div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="flex items-center gap-1">
+                                <div style="width: 0.75rem; height: 0.75rem; background: #a7f3d0; border-radius: 0.125rem;"></div>
+                                <span>Low distance</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <div style="width: 0.75rem; height: 0.75rem; background: #34d399; border-radius: 0.125rem;"></div>
+                                <span>Medium distance</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <div style="width: 0.75rem; height: 0.75rem; background: #10b981; border-radius: 0.125rem;"></div>
+                                <span>High distance</span>
+                            </div>
+                        </div>
+                        <span>Matrix is symmetric</span>
+                    </div>
+
+                    <div class="info-box" style="background: #f9fafb; border: 1px solid #e5e7eb;">
+                        <h4 class="font-medium text-gray-900 mb-2">Matrix Analysis</h4>
+                        <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr);">
+                            <div>
+                                <span class="font-medium text-gray-700">Average Distance:</span>
+                                <div class="text-lg font-semibold text-green-600">95.1</div>
+                            </div>
+                            <div>
+                                <span class="font-medium text-gray-700">Highest Distance:</span>
+                                <div class="text-lg font-semibold text-blue-600">104</div>
+                            </div>
+                            <div>
+                                <span class="font-medium text-gray-700">Lowest Distance:</span>
+                                <div class="text-lg font-semibold" style="color: #ea580c;">79</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What is DAT? -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="section-title">What is the DAT Creativity Game?</h2>
+                    <p class="text-sm text-gray-600">Understanding the Divergent Association Task</p>
+                </div>
+                <div class="card-content space-y-4">
+                    <p class="text-gray-700">The Divergent Association Task (DAT) is a creativity assessment that measures your ability to think of diverse, unrelated concepts. Players must generate 10 words that are as semantically distant from each other as possible.</p>
+                    <p class="text-gray-700">The challenge lies in finding words that share minimal conceptual overlap, requiring creative thinking and broad knowledge across different domains.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
